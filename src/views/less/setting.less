@@ -1,0 +1,84 @@
+@import "less.less";
+.carheader{
+    height:1.2rem /* 90/75 */;
+    line-height:1.2rem /* 90/75 */;
+    font-size:@font;
+    text-align: center;
+    background:#fff;
+    .caredite{
+        float: right;
+        padding-right:.266667rem /* 20/75 */;
+    }
+    .carback{
+        
+            height:.866667rem;
+            width:.866667rem;
+            float: left;
+            margin-top: .133333rem;
+            background:url(../images/searchback.jpg)no-repeat center center;
+            background-size:40% auto
+
+    }
+}
+.settingImg{
+    height:1.466667rem;
+    line-height:1.466667rem;
+    position: relative;
+    padding:.266667rem;
+    background:#fff;
+    border-bottom:.02rem solid #efefef
+}
+.settingLeft{
+    float: left;
+    width: 6.133333rem;
+    img{
+        width:1.466667rem;
+        float: left;
+    }
+    .settinguser{
+        float: left;
+        width:4.266667rem;
+        font-size:.426667rem;
+        position: relative;
+        height:1.466667rem;
+        line-height:1.5;
+        p{
+            @posy();
+            position: absolute;
+            left:.266667rem;
+        }
+        span{
+            display: block;
+            color:#999;
+        }
+    }
+}
+.OrderTop{
+    height:1.333333rem;
+    line-height:1.333333rem;
+    padding: 0 .4rem;
+    font-size: .426667rem;
+    border-bottom: .02rem solid #efefef;
+    background:#fff;
+    a{
+        display:block;
+    }
+    img{
+        float: right;
+    height: .4rem;
+    width: auto;
+    margin-top: .433333rem;
+    transform: rotate(180deg);
+    }
+}
+.usercebutton {
+    width: 80%;
+    height: 1.133333rem;
+    background: #ff8329;
+    font-size: 0.4rem;
+    color: #fff;
+    border-radius: .16rem;
+    margin: .4rem auto 0;
+    text-align: center;
+    line-height: 1.133333rem;
+}

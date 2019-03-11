@@ -1,0 +1,114 @@
+
+.modal {
+    width:100%;height: 100%;position: fixed;left:0;top: 0;overflow: hidden;
+    z-index:99999;background: rgba(0,0,0,.5);
+}
+.modal .icon {
+    width:.6rem;
+    height:.6rem;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.modal button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal .dialog {
+    background: #FFFFFF;
+    min-width: 4.5rem;
+    padding: .3rem .2rem;
+    text-align: center;
+    border-radius: .1rem;
+    box-shadow: 0rem .1rem .3rem 0rem rgba(0, 0, 0, .1);
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+.modal .dialog>h4 {
+    color: #454545;
+    text-align: center;
+    margin: 0;
+    font-size: .4rem;
+    font-weight:normal
+}
+
+.modal .dialog .button-wrapper {
+    padding: .3rem .6rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal .dialog .button-wrapper>button>svg {
+    font-size: .6rem;
+}
+
+.modal .dialog .button-wrapper .check>svg {
+    color: #50C881;
+}
+
+.modal .dialog .button-wrapper .close>svg {
+    color: #FF5152;
+}
+
+.modal-alert>button {
+    font-size: .6rem;
+    color: #50C881;
+    margin-top: .3rem;
+}
+
+.modal-prompt>input[type=text] {
+    font-size: .2rem;
+    margin: .2rem .5rem 0;
+    padding: .1rem .3rem;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, .02);
+    border-radius: .1rem;
+}
+
+.dialog-wrapper-enter {
+    opacity: 0.01;
+    transform: translateY(-30%);
+}
+
+.dialog-wrapper-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 500ms;
+}
+
+.dialog-wrapper-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dialog-wrapper-exit-active {
+    opacity: 0.01;
+    transform: translateY(-30%);
+    transition: all 500ms;
+}
+
+.modal-wrapper-enter {
+    background: rgba(0, 0, 0, 0);
+}
+
+.modal-wrapper-enter-active {
+    background: rgba(0, 0, 0, .4);
+    transition: all 500ms ease-out;
+}
+
+.modal-wrapper-exit {
+    background: rgba(0, 0, 0, .4);
+}
+
+.modal-wrapper-exit-active {
+    background: rgba(0, 0, 0, 0);
+    transition: all 500ms ease-out;
+}

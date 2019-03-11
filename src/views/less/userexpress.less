@@ -1,0 +1,56 @@
+@import "less.less";
+.carheader{
+    height:1.2rem /* 90/75 */;
+    line-height:1.2rem /* 90/75 */;
+    font-size:@font;
+    text-align: center;
+    background:#fff;
+    .caredite{
+        float: right;
+        padding-right:.266667rem /* 20/75 */;
+    }
+    .carback{
+        
+            height:.866667rem;
+            width:.866667rem;
+            float: left;
+            margin-top: .133333rem;
+            background:url(../images/searchback.jpg)no-repeat center center;
+            background-size:40% auto
+
+    }
+}
+.expresslist{
+    li{
+        display: table;
+        width: 100%;
+        background:#fff;
+        padding:.266667rem;
+        border-bottom:.02rem solid #efefef;
+        font-size:@font;
+        span{
+            display:table-cell;
+            vertical-align:middle;
+            width:2.533333rem;
+        }
+        p{
+            display:table-cell;
+            vertical-align:middle;
+            width:6.666667rem;
+            padding:0 .4rem;
+            @box();
+        }
+    }
+}
+.expressListtop{
+    line-height:.933333rem;
+    font-size:@font;
+    background:#fff;
+    padding: .266667rem;
+    a{
+        float: right;
+        padding:0 .333333rem;
+        border:.02rem solid #cccccc;
+        border-radius:.08rem
+    }
+}

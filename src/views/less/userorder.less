@@ -1,0 +1,209 @@
+@import "less.less";
+.carheader{
+    height:1.5rem /* 90/75 */;
+    line-height:1.5rem /* 90/75 */;
+    font-size:@font;
+    text-align: center;
+    background:#fff;
+    .caredite{
+        float: right;
+        padding-right:.266667rem /* 20/75 */;
+    }
+    .carback{
+        
+            height:.866667rem;
+            width:.866667rem;
+            float: left;
+            margin-top: .273333rem;
+            background:url(../images/searchback.jpg)no-repeat center center;
+            background-size:40% auto
+
+    }
+}
+.carlist{
+    margin-bottom:.2rem
+}
+.carlist ul li {
+    height: 3.066667rem/* 240/75 */
+    ;
+    padding: .4rem/* 30/75 */
+    ;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: .02rem solid #efefef;
+    @table();
+    .carcheck {
+        @table-cell();
+        width: .8rem;
+        vertical-align: middle;
+        .check {
+            background-size: 24.32rem/* 1824/75 */
+            auto;
+            height: .64rem/* 48/75 */
+            ;
+            width: .64rem/* 48/75 */
+            ;
+            background-position: -1.68rem/* 126/75 */
+            0;
+        }
+        .ck {
+            background-position: -.96rem/* 72/75 */
+            -.8rem/* 60/75 */
+            ;
+        }
+    }
+    .carimg {
+        @table-cell();
+        width: 2.266667rem/* 170/75 */
+        ;
+        height: 2.266667rem/* 170/75 */
+        ;
+    }
+    .carname {
+        @table-cell();
+        width: 5.933333rem/* 445/75 */
+        /* 455/75 */
+        ;
+        padding-left: .4rem/* 10/75 */
+        ;
+        vertical-align: top;
+        position: relative;
+        a {
+            display: block;
+            h2 {
+                font-size: .426667rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+            /* 32/75 */
+            ;
+            span {
+                font-size: .373333rem/* 28/75 */
+                ;
+                vertical-align: top;
+                color: #666;
+                em {
+                    vertical-align: top;
+                }
+            }
+        }
+        .carprice {
+            color: #ff0000;
+            position: absolute;
+            bottom: 0;
+            font-size: @font
+        }
+    }
+}
+
+.uiseroderTab{
+    overflow: hidden;
+    a{
+        float: left;
+        width:20%;
+        text-align: center;
+        font-size:@font;
+        background:#fff;
+        line-height:1.066667rem; 
+    }
+    .active{
+        color:#54a386;
+        font-weight:bold;
+        border-bottom:.04rem solid #54a386
+    }
+}
+.userorderTOPbOX{
+    line-height:1.266667rem;
+    font-size:.426667rem;
+    background:#fff;
+    padding-left:.266667rem;
+    border-bottom:.02rem solid #efefef;
+    display: block;
+}
+.orderIDbottom{
+    line-height:1.033333rem;
+    text-align:right;
+    font-size:@font;
+    background:#fff;
+    padding-right:.266667rem;
+    span{
+        color:#ff0000
+    }
+}
+.orderIdBtn{
+    text-align:right;
+    background:#fff;
+    overflow: hidden;
+    padding-bottom:.2rem;
+    a{
+       float:right;
+        height:.933333rem;
+        line-height:.933333rem;
+        background:#fff;
+        border:.02rem solid #d7d7d7;
+        padding:0 .4rem;
+        margin-right:.133333rem;
+        font-size:@font;
+        border-radius:.16rem;
+        vertical-align:middle }
+}
+.orderdist{
+    float:right;
+    font-size:.373333rem;
+    margin-right:.2rem;
+    span{
+        color:#ff0000;
+        margin-left: .08rem
+    }
+}
+.choseAddress {
+    padding: .213333rem .266667rem;
+    margin-bottom: .266667rem;
+    background: #fff url(../images/addresschose.jpg)no-repeat center top;
+    background-size: 100% auto;
+    .addtips {
+        margin-top: .133333rem;
+        display: block;
+        width: 1.66rem;
+        height: .48rem;
+        text-align: center;
+        line-height: .48rem;
+        background: #18b67c;
+        font-size: .346667rem;
+        color: #fff;
+        margin-bottom: .133333rem;
+    }
+}
+
+.chosecon {
+    position: relative;
+    font-size: .426667rem;
+    span {
+        margin-left: .093333rem
+    }
+    .chosedd {
+        width: .333333rem;
+        height: .546667rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -0.273333rem;
+        transform: rotate(180deg)
+    }
+}
+.contentitem,.orderTop{
+    line-height:.933333rem;
+    background:#fff;
+    padding:0 .266667rem;
+    font-size:@font;
+    span{
+        float:right;
+    }
+    .price{
+        color:#ff6700
+    }
+}

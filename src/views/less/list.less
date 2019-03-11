@@ -1,0 +1,201 @@
+@import "less.less";
+.carheader {
+    height: 1.5rem/* 90/75 */
+    ;
+    line-height: 1.5rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #fff;
+    .caredite {
+        float: right;
+        padding-right: .266667rem/* 20/75 */
+        ;
+    }
+    .carback {
+        height: .866667rem;
+        width: .866667rem;
+        float: left;
+        margin-top: .333333rem;
+        background: url(../images/searchback.jpg)no-repeat center center;
+        background-size: 40% auto
+    }
+}
+
+.listApp {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling : touch;
+}
+
+.listproduct h3 em {
+    color: #ff0000
+}
+
+.listdesc {
+    height: 1.2rem/* 90/75 */
+    ;
+    line-height: 1.2rem/* 90/75 */
+    ;
+    background: #fff;
+    a {
+        font-size: @font;
+        float: left;
+        width: 25%;
+        text-align: center;
+        position: relative;
+        &:after {
+            content: "";
+            width: .02rem;
+            height: 30%;
+            background: #efefef;
+            position: absolute;
+            right: 0;
+            @posy();
+        }
+    }
+    ;
+    .active {
+        color: #f37d6a;
+        i {
+            display: block;
+            width: .4rem;
+            height: .2rem;
+            position: absolute;
+            background: url(../images/listdown.png)no-repeat;
+            background-size: .4rem auto;
+            right: .1rem;
+            top: 50%;
+            transform: translateY(-40%);
+            background-position: 0 -.26666667rem;
+            transition: all .5s
+        }
+        .check {
+            background-position: 0 0;
+        }
+    }
+    .screen {
+        background: url(../images/screen.png)no-repeat 1.8rem/* 150/75 */
+        /* 20/75 */
+        center;
+        background-size: auto 50%
+    }
+    .top i {
+        background-position: -.62rem/* 36/75 */
+        0 !important;
+    }
+    .desc i {
+        background-position: -.32rem/* 36/75 */
+        0 !important;
+    }
+}
+
+.list-desc a:nth-child(2) i {
+    position: absolute;
+    right: .266667rem/* 20/75 */
+    /* 15/75 */
+    ;
+    @posy();
+    width: .32rem/* 24/75 */
+    /* 32/75 */
+    ;
+    height: .44rem/* 33/75 */
+    /* 44/75 */
+    ;
+    background: url(../images/83.png)no-repeat;
+    background-size: .96rem/* 72/75 */
+    auto;
+}
+
+.screenBox {
+    width: 10rem/* 750/75 */
+    ;
+    padding: .533333rem/* 40/75 */
+    .4rem/* 30/75 */
+    0;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -5rem/* 375/75 */
+    ;
+    bottom: 0;
+    z-index: 3;
+    @box();
+    .listclose {
+        width: .533333rem/* 40/75 */
+        ;
+        height: .533333rem/* 40/75 */
+        ;
+        background: url(../images/41.png)no-repeat center center;
+        background-size: 100% 100%;
+        position: absolute;
+        top: .266667rem/* 20/75 */
+        ;
+        right: .266667rem/* 20/75 */
+    }
+}
+
+.screenBottom {
+    height: 1.333333rem/* 100/75 */
+    ;
+    line-height: 1.333333rem/* 100/75 */
+    ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    a {
+        float: left;
+        text-align: center;
+        font-size: @font;
+        background: @color;
+        width: 50%;
+        color: #fff;
+    }
+    .lleft {
+        background: #efefef;
+        color: #333
+    }
+}
+
+.screenContent {
+    padding-bottom: 1.333333rem/* 100/75 */
+    ;
+    dt {
+        font-size: .426667rem/* 32/75 */
+        ;
+        line-height: 1.066667rem/* 80/75 */
+    }
+    dd {
+        overflow: hidden;
+        margin-right: -.266667rem/* 20/75 */
+        ;
+        a {
+            float: left;
+            height: 1.066667rem/* 80/75 */
+            ;
+            line-height: 1.066667rem/* 80/75 */
+            ;
+            background: #efefef;
+            color: #333;
+            padding: 0 .266667rem/* 20/75 */
+            ;
+            margin: 0 .266667rem/* 20/75 */
+            .266667rem/* 20/75 */
+            0;
+            font-size: @font;
+            border-radius: .106667rem/* 8/75 */
+            ;
+            border: .02rem solid #efefef
+        }
+        .active {
+            background: #fff;
+            border: .02rem solid @color;
+            color: @color
+        }
+    }
+}

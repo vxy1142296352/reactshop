@@ -1,0 +1,486 @@
+@import "less.less";
+.carheader {
+    height: 1.5rem/* 90/75 */
+    ;
+    line-height: 1.5rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #fff;
+    .caredite {
+        float: right;
+        padding-right: .266667rem/* 20/75 */
+        ;
+    }
+    .carback {
+        height: .866667rem;
+        width: .866667rem;
+        float: left;
+        margin-top: .33333rem;
+        background: url(../images/searchback.jpg)no-repeat center center;
+        background-size: 40% auto
+    }
+}
+
+.choseAddress {
+    padding: .213333rem .266667rem;
+    margin-bottom: .266667rem;
+    background: #fff url(../images/addresschose.jpg)no-repeat center top;
+    background-size: 100% auto;
+    .addtips {
+        margin-top: .133333rem;
+        display: block;
+        width: 1.66rem;
+        height: .48rem;
+        text-align: center;
+        line-height: .48rem;
+        background: #18b67c;
+        font-size: .346667rem;
+        color: #fff;
+        margin-bottom: .133333rem;
+    }
+    .Noaddress {
+        line-height: 3;
+        position: relative;
+    }
+}
+
+.chosecon {
+    position: relative;
+    font-size: .426667rem;
+    span {
+        margin-left: .093333rem
+    }
+    .chosedd {
+        width: .333333rem;
+        height: .546667rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -0.273333rem;
+        transform: rotate(180deg)
+    }
+}
+
+.carlist ul {
+    margin-bottom: 0.266667rem
+}
+
+.carlist ul li {
+    padding: .4rem .4rem 0/* 30/75 */
+    ;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: .02rem solid #efefef;
+    margin-bottom: .03rem;
+    .car_Paychose {
+        @table();
+        position: relative;
+        width: 100%;
+    }
+    ;
+    .carcheck {
+        @table-cell();
+        width: .8rem;
+        vertical-align: middle;
+        .check {
+            background-size: 24.32rem/* 1824/75 */
+            auto;
+            height: .64rem/* 48/75 */
+            ;
+            width: .64rem/* 48/75 */
+            ;
+            background-position: -1.68rem/* 126/75 */
+            0;
+        }
+        .ck {
+            background-position: -.96rem/* 72/75 */
+            -.8rem/* 60/75 */
+            ;
+        }
+    }
+    .carimg {
+        @table-cell();
+        width: 2.266667rem/* 170/75 */
+        ;
+        height: 2.266667rem/* 170/75 */
+        ;
+    }
+    .carname {
+        @table-cell();
+        width: 5.933333rem/* 445/75 */
+        /* 455/75 */
+        ;
+        padding-left: .4rem/* 10/75 */
+        ;
+        vertical-align: top;
+        position: relative;
+        a {
+            display: block;
+            h2 {
+                font-size: .426667rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                line-height: 1.5;
+            }
+            /* 32/75 */
+            ;
+            span {
+                font-size: .373333rem/* 28/75 */
+                ;
+                vertical-align: top;
+                color: #666;
+                em {
+                    vertical-align: top;
+                }
+            }
+        }
+        .carprice {
+            color: #ff0000;
+            position: absolute;
+            bottom: 0;
+            font-size: @font
+        }
+    }
+    .paychose1 {
+        border: none;
+        padding: 0;
+        height: 1rem;
+        line-height: 1rem;
+    }
+    .shopprice {
+        height: .8rem;
+        line-height: .8rem;
+        font-size: 0.4rem;
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        text-align: left;
+        position: relative;
+        em {
+            float: left;
+        }
+        span {
+            float: right;
+            color: #ff0000;
+        }
+    }
+}
+
+.paychoseItem {
+    height: 1.333333rem;
+    line-height: 1.333333rem;
+    font-size: @font;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .266667rem;
+    border-bottom: .02rem solid #efefef;
+    background: #fff;
+    text-align: left;
+    position: relative;
+    span {
+        float: right;
+    }
+    .chosedd {
+        width: .266667rem;
+        position: absolute;
+        right: .4rem;
+        top: 50%;
+        margin-top: -0.263333rem;
+        transform: rotate(180deg)
+    }
+    .chosedactive {
+        transform: rotate(270deg)
+    }
+}
+
+.paychoseBox {
+    overflow: hidden;
+    padding-top: .266667rem;
+    background: #fff;
+    padding-left: .266667rem;
+    padding-right: .266667rem;
+    height: 0;
+    dt {
+        font-size: @font;
+        height: .8rem;
+        line-height: .8rem;
+        float: left;
+        padding: 0 .4rem;
+        margin-bottom: .266667rem;
+        background: #efefef;
+        border: .02rem solid #fff;
+        margin-right: .266667rem;
+        border-radius: .08rem
+    }
+    .active {
+        background: #fff;
+        border: .02rem solid #f37d6a;
+        color: #f37d6a
+    }
+}
+
+.Createrorder {
+    padding-top: .533333rem;
+    background: #fff;
+    text-align: right;
+    padding: 0 .266667rem;
+    font-size: @font;
+    line-height: .933333rem;
+    em {
+        float: left;
+    }
+    span {
+        color: #ff0000
+    }
+}
+
+.createBtom {
+    background: #fff;
+    overflow: hidden;
+    padding-top: .4rem;
+}
+
+.createBtn {
+    width: 100%;
+    display: block;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    padding: 0 .8rem;
+    background: #56bf10;
+    color: #fff;
+    text-align: center;
+    font-size: @font;
+    box-sizing: border-box
+}
+
+.NOcreateBtn {
+    width: 100%;
+    display: block;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    padding: 0 .8rem;
+    background: #dedede;
+    color: #fff;
+    text-align: center;
+    font-size: @font;
+    box-sizing: border-box
+}
+
+/*在线转账*/
+
+.paymoneyBox {
+    background: #fff;
+    padding-bottom: .666667rem;
+    p {
+        font-size: .48rem;
+        color: #ff0000;
+        line-height: 2;
+        text-align: center
+    }
+    a {
+        display: block;
+        width: 4rem;
+        height: .8rem;
+        text-align: center;
+        line-height: .8rem;
+        font-size: @font;
+        margin: .4rem auto 0;
+        background: #ff0000;
+        color: #fff;
+    }
+}
+
+/*在线支付*/
+
+.onlineheader {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: #f37d6a;
+    color: #fff
+}
+.realmoney {
+    padding: 0.8933333333rem 0;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 0.2666666667rem;
+    font-size: 0.4rem;
+    span {
+        color: #ff0000;
+        display: block;
+        line-height: 2;
+        font-size: 0.6133333333rem;
+    }
+}
+
+.moneytips {
+    padding: 0.4rem 1.3333333333rem;
+    background: #fef9e3;
+    font-size: 0.3733333333rem;
+    color: #cf7930;
+    line-height: 1.5;
+    margin-bottom: 0.2666666667rem;
+}
+
+.paynameBox .payactive::before {
+    content: "";
+    position: absolute;
+    width: 0.6666666667rem;
+    height: 0.6666666667rem;
+    background: url(../images/14.png)no-repeat;
+    background-size: 100% 100%;
+    right: .233333rem;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.paynameBox li {
+    padding: 0.2333333333rem;
+    background: #fff;
+    width: 100%;
+    display: table;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 0.0133333333rem solid #f2f2f2;
+    .payimg {
+        display: table-cell;
+        width: 13%;
+    }
+    .payname {
+        display: table-cell;
+        width: 87%;
+        font-size: 0.48rem;
+        vertical-align: middle;
+        padding-left: 0.5333333333rem;
+        p {
+            font-size: 0.3733333333rem;
+            color: #999
+        }
+    }
+}
+
+.paysubmit {
+    width: 100%;
+    height: 1.133333rem;
+    background: #ff8329;
+    font-size: 0.4rem;
+    color: #fff;
+    border-radius: 0.16rem;
+    margin: 0.4rem auto 0;
+    text-align: center;
+    line-height: 1.133333rem;
+    border: none;
+    margin: 0.4rem auto;
+    display: block
+}
+
+.pay_BJ {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    display: block;
+}
+
+.pay_Express {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: .1rem .3rem 4rem;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.pay_Express .express_Close {
+    float: right;
+    width: 0.533333rem
+    /* 40/75 */
+    ;
+    height: 0.533333rem
+    /* 40/75 */
+    ;
+    background: url(../images/41.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 0.2143333rem;
+}
+
+.payexpress_Tiele {
+    text-align: left;
+    line-height: 2;
+    font-size: .46rem;
+    clear: both
+}
+
+.pay_Express p {
+    font-size: .42rem;
+    text-align: left;
+    line-height: 2;
+    position: relative;
+}
+
+.pay_Express button {
+    font-size: .42rem;
+    text-align: left;
+    line-height: 2;
+    position: relative;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.pay_Express p::after {
+    content: "";
+    position: absolute;
+    right: .3rem;
+    width: .4rem;
+    height: .4rem;
+    background: url(../images/checkNomal.png);
+    background-size: 100% 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.pay_Express button::after {
+    content: "";
+    position: absolute;
+    right: .3rem;
+    width: .4rem;
+    height: .4rem;
+    background: url(../images/checkNomal.png);
+    background-size: 100% 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.pay_Express .active::after {
+    background: url(../images/14.png);
+    background-size: 100% 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.paychoseItem .payremark {
+    display: block;
+    width: 6rem;
+    height: 1rem;
+    border: none;
+    margin-top: .166667rem;
+    padding-left: .3rem
+}
+
+.wxPayheader {
+    border-bottom: 1px solid #dedede;
+    height:1.5rem;
+    line-height:1.5rem;
+}

@@ -1,0 +1,254 @@
+@import "less.less";
+.carheader {
+    height: 1.5rem/* 90/75 */
+    ;
+    line-height: 1.5rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #fff;
+    .caredite {
+        float: right;
+        padding-right: .266667rem/* 20/75 */
+        ;
+        color: #999;
+    }
+    .carback {
+        height: .866667rem;
+        width: .866667rem;
+        float: left;
+        margin-top: .283333rem;
+        background: url(../images/searchback.jpg)no-repeat center center;
+        background-size: 40% auto
+    }
+}
+
+.addressb .caredite {
+    font-size: .8rem;
+}
+
+.addresslistBox {
+    li {
+        margin-top: .266667rem;
+        padding: .2rem;
+        background: #fff;
+        .addressusernme {
+            line-height: .8rem;
+            text-align: left;
+            font-size: .426667rem;
+            span {
+                float: right;
+            }
+        }
+        p {
+            line-height: .933333rem;
+            font-size: @font;
+            border-bottom: .02rem solid #efefef
+        }
+        .deleadd {
+            height: .933333rem;
+            line-height: .933333rem;
+            font-size: @font;
+            padding-top: .093333rem;
+            .default {
+                float: left;
+                i {
+                    float: left;
+                    margin: .143333rem .4rem 0 0;
+                    background: url(../images/img1.png) no-repeat center center;
+                    background-size: 24.32rem/* 1824/75 */
+                    auto;
+                    height: 0.64rem/* 48/75 */
+                    ;
+                    width: 0.64rem/* 48/75 */
+                    ;
+                    background-position: -1.68rem/* 126/75 */
+                    0;
+                }
+            }
+            .isdefault i {
+                background-position: -0.96rem/* 72/75 */
+                -0.8rem/* 60/75 */
+                ;
+            }
+            .defdelete {
+                padding: 0 .133333rem 0 .8rem;
+                background: url(../images/21.png)no-repeat left center;
+                background-size: auto 60%
+            }
+        }
+    }
+    .addult {
+        background: #fff url(../images/addresschose.jpg)no-repeat center top;
+        background-size: 100% auto
+    }
+}
+
+.additem {
+    height: 1.333333rem;
+    line-height: 1.133333rem;
+    display: table;
+    background: #fff;
+    border-bottom: .02rem solid #efefef;
+    width: 100%;
+    padding: 0 .266667rem;
+    @box();
+    span {
+        @table-cell();
+        font-size: @font;
+        width: 1.866667rem;
+        text-align: justify;
+        vertical-align: middle;
+    }
+    input {
+        @table-cell();
+        width: 6.266667rem;
+        height: 1.133333rem;
+        border: none;
+        @box();
+        padding-left: .266667rem;
+        vertical-align: middle;
+    }
+}
+
+.additemstree {
+    @table-cell();
+    width: 5.333333rem;
+    em {
+        font-size: .373333rem;
+        float: left;
+        line-height: 1.3rem;
+        margin-right: .066667rem
+    }
+    ;
+}
+
+.addresschose {
+    @table-cell();
+    width: 2.266667rem;
+    font-size: .373333rem;
+    vertical-align: middle;
+    text-align: right;
+    color: #999;
+    padding-right: .6rem;
+    background: url(../images/searchback2.jpg) no-repeat right center;
+    background-size: auto 30%
+}
+
+.addressstree {
+    height: 3rem;
+    background: #fff;
+    textarea {
+        display: block;
+        width: 100%;
+        height: 3rem;
+        border: none;
+        outline: none;
+        @box();
+        font-size: @font;
+        padding: .266667rem 0 0 .266667rem
+    }
+}
+
+.back {
+    width: 10rem;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    margin-left: -5rem;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 3;
+}
+
+.choseAddBox {
+    z-index: 5;
+    width: 10rem;
+    height: 11.6rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -5rem;
+    bottom: 0;
+    background: #fff;
+    @box();
+    padding: 0 .266667rem;
+    .choseAddtop {
+        height: 1.12rem;
+        line-height: 1.12rem;
+        font-size: .426667rem;
+        color: #333;
+        .choseclo {
+            width: 0.533333rem/* 40/75 */
+            ;
+            height: 0.533333rem/* 40/75 */
+            ;
+            background: url(../images/41.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-top: .266667rem
+        }
+    }
+}
+
+.choseAddtab {
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    font-size: @font;
+    border-bottom: .02rem solid #d7d7d7;
+    overflow: hidden;
+    ul {
+        overflow: hidden;
+    }
+    li {
+        float: left;
+        padding-right: .266667rem;
+        color: #333
+    }
+    ;
+    .active {
+        color: #ff6700;
+        border-bottom: .02rem solid #ff6700;
+    }
+}
+
+.choseCityBox {
+    overflow-y: auto;
+    height: 9.333333rem;
+    scroll-behavior: smooth;
+    li {
+        height: 1.066667rem;
+        line-height: 1.066667rem;
+        text-align: left;
+        font-size: @font;
+    }
+}
+
+.saveadd {
+    display: block;
+    width: 85%;
+    height: 1rem;
+    margin: 0 auto .26rem;
+    border: none;
+    font-size: .36rem;
+    outline: none;
+    border-radius: .06rem
+}
+
+.savemore {
+    background: #ff6700;
+    color: #fff
+}
+.addisdefault {
+    float: right;
+    width: 1.6rem;
+    height: .7rem;
+    background:url(../images/isdefault.png)no-repeat;
+    background-size:3.4rem .7rem;
+    margin-top:0.31665rem;
+    transition: all .3s
+}
+.additem  .ondefault{
+    background-position:0 0
+}
+.additem  .offdefault{
+    background-position:-1.8rem 0
+}

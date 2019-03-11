@@ -1,0 +1,256 @@
+@import "less.less";
+.aftersale ul li {
+    height: 3.066667rem/* 240/75 */
+    ;
+    padding: .4rem/* 30/75 */
+    ;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: .266667rem;
+    position: relative;
+    @table();
+    .carcheck {
+        @table-cell();
+        width: .8rem;
+        vertical-align: middle;
+        .check {
+            background-size: 24.32rem/* 1824/75 */
+            auto;
+            height: .64rem/* 48/75 */
+            ;
+            width: .64rem/* 48/75 */
+            ;
+            background-position: -1.68rem/* 126/75 */
+            0;
+        }
+        .ck {
+            background-position: -.96rem/* 72/75 */
+            -.8rem/* 60/75 */
+            ;
+        }
+    }
+    .carimg {
+        @table-cell();
+        width: 2.266667rem/* 170/75 */
+        ;
+        height: 2.266667rem/* 170/75 */
+        ;
+    }
+    .carname {
+        @table-cell();
+        width: 5.933333rem/* 445/75 */
+        /* 455/75 */
+        ;
+        padding-left: .133333rem/* 10/75 */
+        ;
+        vertical-align: top;
+        position: relative;
+        a {
+            display: block;
+            h2 {
+                font-size: .426667rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+            }
+            /* 32/75 */
+            ;
+            span {
+                font-size: .373333rem/* 28/75 */
+                ;
+                vertical-align: top;
+                color: #666;
+                em {
+                    vertical-align: top;
+                }
+            }
+        }
+        .carprice {
+            color: #ff0000;
+            position: absolute;
+            bottom: 0;
+            font-size: @font
+        }
+        .carnumer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 3.2rem/* 240/75 */
+            /* 260/75 */
+            /* 160/75 */
+            ;
+            height: .8rem/* 60/75 */
+            /* 70/75 */
+            /* 40/75 */
+            ;
+            text-align: center;
+            border: .04rem solid #efefef;
+            a {
+                float: left;
+                width: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                height: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                line-height: .8rem/* 60/75 */
+                /* 70/75 */
+                ;
+                @box();
+                background: #efefef;
+                font-size: .426667rem/* 32/75 */
+                ;
+                color: #333;
+            }
+            input {
+                float: left;
+                border: none;
+                background: none;
+                font-size: .373333rem/* 28/75 */
+                ;
+                width: 1.6rem/* 120/75 */
+                /* 80/75 */
+                ;
+                height: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                text-align: center
+            }
+            input::placeholder {
+                color: #333
+            }
+        }
+    }
+}
+
+.aftersale ul li:last-child {
+    margin-bottom: 0
+}
+
+.carheader {
+    height: 1.2rem/* 90/75 */
+    ;
+    line-height: 1.2rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #fff;
+    .caredite {
+        float: right;
+        padding-right: 0.266667rem/* 20/75 */
+        ;
+    }
+    .carback {
+        height: 0.866667rem;
+        width: 0.866667rem;
+        float: left;
+        margin-top: 0.133333rem;
+        background: url(../images/searchback.jpg) no-repeat center center;
+        background-size: 40% auto;
+    }
+}
+
+.evotetips,
+.evotestar {
+    overflow: hidden;
+    height: 0.933333rem;
+    line-height: 0.933333rem;
+    background: #fff;
+    padding: 0.266667rem;
+    span {
+        float: left;
+        font-size: @font;
+        padding: 0 0.536667rem;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: .36rem;
+            height: .36rem;
+            border: .02rem solid #dedede;
+            left: .1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+    }
+    .active {
+        &:before {
+            border: .02rem solid #ff0000;
+        }
+    }
+}
+
+.evoteimg {
+    width: 2rem;
+    height: 0.933333rem;
+    float: left;
+    font-size: .4rem
+}
+
+.evoteText textarea {
+    display: block;
+    font-size: @font;
+    @box();
+    height: 3.2rem;
+    padding: .266667rem 0 0 .266667rem;
+    width: 100%;
+    border: none;
+    outline: none
+}
+
+.afterGogds {
+    height: 0.933333rem;
+    line-height: 0.933333rem;
+    background: #fff;
+    padding: 0.266667rem;
+    font-size: @font;
+    span {
+        margin: 0 .226667rem;
+        font-size: .373333rem
+    }
+    .active {
+        color: #ff0000
+    }
+    .moneyinput,
+    .moneyinputse {
+        height: 0.933333rem;
+        width: 6.666667rem;
+        float: right;
+        border: none;
+        padding-left: .266667rem;
+        font-size: @font;
+    }
+    .moneyinput[disabled] {
+        background: #f9f9f9
+    }
+    .moneyinputse {
+        background: #efefef
+    }
+}
+
+.addressstree {
+    background: #fff;
+    padding-bottom: 1rem
+}
+
+.saveadd {
+    display: block;
+    width: 85%;
+    height: 1rem;
+    margin: 0 auto .26rem;
+    border: none;
+    font-size: .36rem;
+    outline: none;
+    border-radius: .06rem
+}
+
+.savemore {
+    background: #ff6700;
+    color: #fff
+}

@@ -1,0 +1,75 @@
+@import "less.less";
+
+.searchheader{
+    width: 10rem;
+    height:.866667rem;
+    padding: .266667rem 0;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    .searchInput{
+        width:7rem /* 450/75 */ /* 550/75 */;
+        height:.866667rem;
+        color:#9d9d9d;
+        font-size:@font /* 30/75 */;
+        display:block;
+        margin: 0 auto;
+        border:none;
+        @box();
+        padding-left:.8rem /* 60/75 */;
+        background:#efefef url(../images/home_search.png)no-repeat .133333rem /* 10/75 */ center;
+        background-size: .533333rem /* 40/75 */ .533333rem /* 40/75 */;
+        border-radius:.106667rem /* 8/75 */
+    }
+    .searchbtn{
+        width:1rem /* 150/75 */ /* 40/75 */;
+        height: .533333rem /* 40/75 */;
+        text-align:right;
+        line-height: .533333rem /* 40/75 */;
+        position: absolute;
+        right:.366667rem /* 20/75 */;
+        top:.416667rem;
+        font-size:@font /* 30/75 */;
+    }
+    .searchback{
+        height:.866667rem;
+        width:.866667rem;
+        position: absolute;
+        top:.266667rem;
+        left:.266667rem /* 20/75 */;
+        background:url(../images/searchback.jpg)no-repeat center center;
+        background-size:40% auto
+    }
+}
+.searchkey{
+    padding:.266667rem /* 20/75 */ /* 30/75 */;
+    background:#fff;
+    .searchTitle{
+        font-size:@font /* 30/75 */;
+        line-height:.8rem /* 60/75 */;
+        margin-bottom: .266667rem /* 20/75 */;
+        border-bottom:.026667rem /* 2/75 */ solid #efefef;
+        .delhistiry{
+            float: right;
+            height:.586667rem /* 44/75 */;
+            width:.586667rem /* 44/75 */;
+            background-position: -8.466667rem /* 635/75 */ 0;
+            margin-top: .066667rem /* 5/75 */;
+            margin-right: .066667rem /* 5/75 */
+        }
+    }
+    .Hotsearch{overflow: hidden;
+        margin-right:-.266667rem ;/* 20/75 */
+    a{
+        float: left;
+        height:.666667rem /* 50/75 */;
+        line-height: .666667rem /* 50/75 */;
+        background:rgb(251, 245, 235);
+        font-size:.373333rem /* 28/75 */;
+        padding:0 .333333rem /* 25/75 */;
+        margin:0 .266667rem /* 20/75 */ .266667rem /* 20/75 */ 0
+    }
+    }
+    .History a{background:#efefef;}
+}

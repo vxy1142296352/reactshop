@@ -1,0 +1,357 @@
+@import "less.less";
+
+.carheader {
+    height: 1.5rem/* 90/75 */
+    ;
+    line-height: 1.5rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #f37d6a;
+    color: #fff;
+    .caredite {
+        float: right;
+        padding-right: .266667rem/* 20/75 */
+        ;
+    }
+}
+
+.userpoint {
+    padding: .8rem .4rem;
+    @table();
+    @box();
+    width: 100%;
+    background: #f37d6a;
+    a {
+        @table-cell();
+        text-align: center;
+        font-size: @font;
+        width: 25%;
+        position: relative;
+        color: #fff;
+        em {
+            display: block
+        }
+        ;
+        span {
+            color: #fff
+        }
+    }
+}
+
+.userpde {
+    line-height: .933333rem;
+    font-size: @font;
+    color: #fff;
+    width: 100%;
+    background: #f37d6a;
+    text-align: center
+}
+
+.OrderTop {
+    height: 1.333333rem;
+    line-height: 1.333333rem;
+    padding: 0 .4rem;
+    font-size: .426667rem;
+    border-bottom: .02rem solid #efefef;
+    img {
+        float: right;
+        height: .4rem;
+        width: auto;
+        margin-top: .46rem;
+        transform: rotate(180deg);
+    }
+}
+
+.orderWbotom {
+    padding: .666667rem 0;
+    overflow: hidden;
+    a {
+        float: left;
+        width: 33.333%;
+        font-size: @font;
+        text-align: center;
+        span {
+            display: block;
+            width: 1.466667rem;
+            height: 1.466667rem;
+            margin: 0 auto .266667rem;
+            border-radius: 50%;
+        }
+    }
+    a:first-child span {
+        background: #fe4d95 url(../images/wallet-list.png)no-repeat center center;
+        background-size: 50% 50%
+    }
+    a:nth-child(2) span {
+        background: #29a4e8 url(../images/walletpay.png)no-repeat center center;
+        background-size: 50% 50%
+    }
+    a:nth-child(3) span {
+        background: #ff6700 url(../images/85.png)no-repeat center center;
+        background-size: 46% 50%
+    }
+}
+
+.walletheader {
+    background: #fff;
+    color: #333;
+    .carback {
+        height: .866667rem;
+        width: .866667rem;
+        float: left;
+        margin-top: .273333rem;
+        background: url(../images/searchback.jpg)no-repeat center center;
+        background-size: 40% auto
+    }
+}
+.walletApp,.walletlistApp{min-height:100%;background:#fff}
+.walletlist li {
+    font-size: @font;
+    line-height: 3;
+    border-bottom: .02666667rem solid #efefef;
+    padding: 0 .266667rem
+}
+
+.moneyheader {
+    border-bottom: .0266667rem solid #f2f2f2;
+    .caredite {
+        font-size: .32rem
+    }
+}
+
+.moneyfrom {
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    font-size: .4rem;
+    padding: .5rem 0;
+    font-weight: bold;
+    border-bottom: .12666667rem solid #f2f2f2;
+    i {
+        float: left;
+        width: .8rem;
+        height: .8rem;
+        background: url(../images/wxpay.jpg)no-repeat;
+        background-size: 100% 100%;
+        margin: .13333335rem .2rem 0 .3rem
+    }
+    span {
+        font-weight: normal;
+        font-size: .34rem
+    }
+}
+
+.nowmoney {
+    padding: .4rem .5rem;
+    text-align: left;
+    border-bottom: .12666667rem solid #f2f2f2;
+    font-size: .4rem;
+}
+
+.inputmoney {
+    padding: .2rem .4rem;
+    border-bottom: .12666667rem solid #f2f2f2;
+    font-size: .4rem;
+    position: relative;
+    input {
+        display: block;
+        height: 1.3rem;
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        padding-left: .8rem;
+        position: relative;
+        z-index: 3;
+    }
+    &:before {
+        content: "￥";
+        position: absolute;
+        font-size: .5rem;
+        color: #333;
+        left: .4rem;
+        z-index: 4;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    span {
+        position: absolute;
+        font-size: .36rem;
+        color: #ff6700;
+        right: .4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+}
+
+.moneApply {
+    display: block;
+    width: 80%;
+    height: 1.133333rem;
+    background: #ff8329;
+    font-size: 0.4rem;
+    color: #fff;
+    border-radius: 0.16rem;
+    margin: 0.4rem auto 0;
+    text-align: center;
+    line-height: 1.133333rem;
+    outline: none;
+    border: none
+}
+
+/*提现列表*/
+
+.putlist{
+    background:#fff
+}
+.putlist li {
+    padding: .2rem;
+    border-bottom: .0266667rem solid #efefef;
+    font-size: .4rem;
+}
+
+.putlist .listtop {
+    line-height: 2;
+    overflow: hidden;
+    span {
+        float: right;
+        color: #f37d6a
+    }
+}
+
+.putlist .listtime {
+    line-height: 2;
+    overflow: hidden;
+    color: #999;
+    span {
+        float: right;
+        color: #f37d6a
+    }
+}
+
+.putlist .listsuccess span {
+    color: #56bf10
+}
+
+/*提现详情*/
+
+.successApp {
+    height: 100%;
+    background: #f3f3f3
+}
+
+.statusBox {
+    padding: 1.6rem 0;
+    text-align: center
+}
+
+.statusBox img {
+    display: inline-block;
+    width: 40%;
+}
+
+.statusBox p {
+    font-size: .5rem;
+    padding-top: .4rem
+}
+
+.putdetailsBox {
+    padding: .3rem .2rem;
+    background: #fff
+}
+
+.putdetailsBox p {
+    font-size: 0.3733333333rem;
+    color: #666;
+    line-height: 2;
+    span {
+        float: right;
+        color: #333
+    }
+    .price {
+        color: #ff6700
+    }
+}
+
+.carheader .searchback {
+    height: 0.866667rem;
+    width: 0.866667rem;
+    float: left;
+    margin-top: 0.273333rem;
+    background: url(../images/goback.png)no-repeat center center;
+    background-size: 30% auto
+}
+
+.realnameBox {
+    .realtoptips{
+        padding: 0.42333333333rem .1333333rem;
+        font-size: 0.3733333333rem;
+        background: #fff9e1;
+        color: #e4d286;
+        margin-bottom: 0.6666666667rem
+    }
+    .realnamepic {
+        position: relative;
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+    }
+    .realnamepic2 {
+        padding-bottom: 0.4rem;
+        border-bottom: 0.2rem solid #efeef3
+    }
+    .realinputname {
+        height: 1.3333333333rem;
+        line-height: 1.3333333333rem;
+        font-size: 0.4rem;
+        padding: 0 0.2666666667rem;
+        span {
+            float: left;
+            width: 2.6666666667rem;
+            text-align: justify
+        }
+        input {
+            float: left;
+            width: 6.6666666667rem;
+            height: 1.3333333333rem;
+            border: none
+        }
+    }
+}
+
+.realBox {
+    padding-top: 0.6666666667rem
+}
+
+.realnametips {
+    padding-top: 0.4rem;
+    text-align: center;
+    color: #ff0000;
+    font-size: 0.48rem;
+    span{
+        display:block
+    };
+    p{
+        font-size:0.3733333333rem;
+        color:#666
+    }
+}
+.realsubmit{
+    display: block;
+    width:100%;
+    height: 1.133333rem;
+    background: #ff8329;
+    font-size: 0.4rem;
+    color: #fff;
+    border-radius: 0.16rem;
+    margin: 0.4rem auto 0;
+    text-align: center;
+    line-height: 1.133333rem;
+    border: none;
+    outline: none
+}

@@ -1,0 +1,98 @@
+@import "less.less";
+.pointApp{
+    background: #fff;
+    overflow-x: hidden
+}
+.pointtop {
+    height: 4.666667rem;
+    width: 10rem;
+    background: url(../images/bg-panel-sign.jpg);
+    background-size: 100% 100%;
+    padding: .4rem;
+    position: relative;
+    @box();
+    .pointright span {
+        display: block;
+        color: #fff;
+        font-size: @font
+    }
+    .pointget {
+        width: 2.666667rem;
+        height: 2.666667rem;
+        position: absolute;
+        background: url(../images/ico-integral-sign.png) no-repeat;
+        background-size: 5.333333rem 2.666667rem;
+        background-position: 0 0;
+        @poxy();
+    }
+    .pointget2 {
+        background-position: -2.666667rem 0
+    }
+    .pointlist {
+        text-align: center;
+        font-size: .373333rem;
+        color: #ff563f;
+        position: absolute;
+        bottom: .566667rem;
+        width: 100%;
+        text-align: center;
+    }
+    .pointbottom {
+        font-size: @font;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        bottom: .266667rem;
+        span {
+            color: #ffe400;
+            font-weight: bold;
+        }
+    }
+    .userPoint_back{
+        position: absolute;
+        width: 0.933333rem /* 70/75 */ /* 50/75 */ /* 70/75 */ /* 90/75 */ /* 70/75 */ /* 60/75 */;
+    height: 0.933333rem /* 70/75 */ /* 50/75 */ /* 70/75 */ /* 90/75 */ /* 70/75 */ /* 60/75 */;
+    background:url("../images/detailsBack.png");
+    background-size:100% 100%
+    }
+}
+.pointmonth{
+    background:#fff
+}
+.pointmonth {
+    h3 {
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: @font;
+        border-bottom: .02rem solid #efefef
+    }
+}
+
+.pointmonthBox {
+    ul {
+        overflow: hidden;
+    }
+    li {
+        width: 1.428571rem;
+        height: 1.428571rem;
+        font-size: .373333rem;
+        float: left;
+        line-height: 1.428571rem;
+        text-align: center;
+    }
+    .check {
+        background: url(../images/ico-checked-sign.png)no-repeat center center;
+        background-size: 60% 60%
+    }
+}
+
+.pointrules {
+    line-height: .666667rem;
+    font-size: .373333rem;
+    padding: .4rem;
+    span {
+        display: block;
+        font-size: .426667rem;
+    }
+}

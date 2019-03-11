@@ -1,0 +1,4 @@
+.DEtailshareBox,.share_Back{opacity:0}
+.share_trans-exit-active .DEtailshareBox,.share_trans-exit-active .share_Back{opacity:1}
+.share_trans-enter-done .DEtailshareBox,.share_trans-enter-done .share_Back{opacity:1;transition:all .4s}
+.share_trans-exit-done  .DEtailshareBox,.share_trans-exit-done  .share_Back{opacity:0;transition:all .4s}

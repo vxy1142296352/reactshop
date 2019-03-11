@@ -1,0 +1,229 @@
+@import "less.less";
+.carheader {
+    height: 1.5rem/* 90/75 */
+    ;
+    line-height: 1.5rem/* 90/75 */
+    ;
+    font-size: @font;
+    text-align: center;
+    background: #fff;
+    .caredite {
+        float: right;
+        padding-right: .266667rem/* 20/75 */
+        ;
+    }
+    .carback {
+        height: .866667rem;
+        width: .866667rem;
+        float: left;
+        margin-top: .23333rem;
+        background: url(../images/searchback.jpg)no-repeat center center;
+        background-size: 40% auto
+    }
+}
+
+.carlist {
+    padding-bottom: 2.8rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carlist ul li {
+    height: 3.066667rem/* 240/75 */
+    ;
+    padding: .4rem/* 30/75 */
+    ;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: .266667rem;
+    position: relative;
+    @table();
+    .carcheck {
+        @table-cell();
+        width: .8rem;
+        vertical-align: middle;
+        .check {
+            background-size: 24.32rem/* 1824/75 */
+            auto;
+            height: .64rem/* 48/75 */
+            ;
+            width: .64rem/* 48/75 */
+            ;
+            background-position: -1.68rem/* 126/75 */
+            0;
+        }
+        .ck {
+            background-position: -.96rem/* 72/75 */
+            -.8rem/* 60/75 */
+            ;
+        }
+    }
+    .carimg {
+        @table-cell();
+        width: 2.266667rem/* 170/75 */
+        ;
+        height: 2.266667rem/* 170/75 */
+        ;
+    }
+    .carname {
+        @table-cell();
+        width: 5.933333rem/* 445/75 */
+        /* 455/75 */
+        ;
+        padding-left: .133333rem/* 10/75 */
+        ;
+        vertical-align: top;
+        position: relative;
+        a {
+            display: block;
+            h2 {
+                font-size: .426667rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:1;
+                overflow: hidden;
+            }
+            /* 32/75 */
+            ;
+            span {
+                font-size: .373333rem/* 28/75 */
+                ;
+                vertical-align: top;
+                color: #666;
+                em {
+                    vertical-align: top;
+                }
+            }
+        }
+        .carprice {
+            color: #ff0000;
+            position: absolute;
+            bottom: 0;
+            font-size: @font
+        }
+        .carnumer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 3.2rem/* 240/75 */
+            /* 260/75 */
+            /* 160/75 */
+            ;
+            height: .8rem/* 60/75 */
+            /* 70/75 */
+            /* 40/75 */
+            ;
+            text-align: center;
+            border: .04rem solid #efefef;
+            a {
+                float: left;
+                width: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                height: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                line-height: .8rem/* 60/75 */
+                /* 70/75 */
+                ;
+                @box();
+                background: #efefef;
+                font-size: .426667rem/* 32/75 */
+                ;
+                color: #333;
+            }
+            input {
+                float: left;
+                border: none;
+                background: none;
+                font-size: .373333rem/* 28/75 */
+                ;
+                width: 1.6rem/* 120/75 */
+                /* 80/75 */
+                ;
+                height: .8rem/* 60/75 */
+                /* 70/75 */
+                /* 40/75 */
+                ;
+                text-align: center
+            }
+            input::placeholder{color:#333}
+        }
+    }
+}
+
+.payfooter {
+    height: 1.2rem/* 90/75 */
+    ;
+    position: fixed;
+    bottom: 1.6rem;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 0 0 0 .4rem/* 30/75 */
+    ;
+    @box();
+    @table();
+    .carcheck {
+        @table-cell();
+        width: .8rem;
+        vertical-align: middle;
+        .check {
+            background-size: 24.32rem/* 1824/75 */
+            auto;
+            height: .64rem/* 48/75 */
+            ;
+            width: .64rem/* 48/75 */
+            ;
+            background-position: -1.68rem/* 126/75 */
+            0;
+        }
+        .ck {
+            background-position: -.96rem/* 72/75 */
+            -.8rem/* 60/75 */
+            ;
+        }
+    }
+    .carall {
+        @table-cell();
+        width: .8rem;
+        font-size: @font;
+        vertical-align: middle;
+    }
+    .carpayright {
+        width: 7.066667rem/* 530/75 */
+        ;
+        @table-cell();
+        .carPaydele {
+            width: 6.666667rem/* 500/75 */
+            /* 460/75 */
+            ;
+            float: right;
+            height: 1.2rem;
+            a {
+                float: left;
+                width: 50%;
+                background:@color;
+                font-size: @font;
+                line-height: 1.2rem;
+                text-align: center;
+                color: #fff;
+                em {
+                    margin-left: .133333rem
+                }
+            }
+            .cardelete{float:right;  background:@color !important;color:#fff !important;}
+        }
+    }
+}
+
+.carPaydele a:first-child {
+    background: none !important;
+    color: #999 !important;
+    span {
+        color: #ff0000;
+        margin:0 .06667rem
+    }
+}
